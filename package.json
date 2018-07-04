@@ -4,7 +4,7 @@
   "description": "获取 github 指定语言相关开发者",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "pm2 start index.js --name=github-user-crawler"
   },
   "author": "xunjianxiang@gmail.com",
   "license": "ISC",

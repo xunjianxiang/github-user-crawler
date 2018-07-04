@@ -27,7 +27,8 @@ class Crawler {
     console.time(`getContributors: ${url}`);
     const { data, link } = await this.request(url);
     console.timeEnd(`getContributors: ${url}`);
-    for (let index = 0; index < 1; index++) {
+    const len = data.length;
+    for (let index = 0; index < len; index++) {
       const contributor = data[index];
       await this.getUserInfo(contributor.url);
     }
